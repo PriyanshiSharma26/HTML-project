@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('coffee_new.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+
+        .parent-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo ion-icon {
+            margin-right: 5px;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: calc(100vh - 80px);
+            padding: 0 100px;
+        }
+
+        .main-content .content {
+            max-width: 500px;
+        }
+
+        .main-content .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .main-content .content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .main-content .content button {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 10px 30px;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Login Form */
+        .login-form {
+             background-color: rgba(0, 0, 0, 0.6); 
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 25px;
+            font-size: 16px;
+
+        }
+
+        .login-form input::placeholder {
+            color: white;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #8b4513;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-form button:hover {
+            background-color: #a0522d;
+        }
+
+        .login-form .remember-me {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .login-form .remember-me input {
+            margin-right: 5px;
+        }
+
+        .login-form .forgot-password {
+            font-size: 14px;
+            text-align: right;
+            color:aliceblue;
+        }
+
+        .login-form .signup {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-form .signup a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .login-form .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="parent-nav">
+        <div class="logo">
+            <ion-icon name="cafe"></ion-icon>Coffee
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="content">
+            <h1>Coffee Build Your Mind</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, labore doloribus libero dicta
+                aperiam quos
+                animi temporibus possimus et fugiat quo perferendis aliquam aliquid consequuntur hic, commodi non
+                culpa id.
+            </p>
+            <button>Get Started</button>
+        </div>
+
+        <div class="login-form">
+            <h2>Member Login</h2>
+            <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+                <div class="remember-me">
+                    <div>
+                        <input type="checkbox"> Remember me
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button>Login</button>
+                <div class="signup">
+                    Not a member? <a href="#">Sign up now</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
