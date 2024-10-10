@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="google.css" />
+
+
+<style>
+
+    *{
+      margin:0;
+  }
+  
+  body{
+      display: flex;
+      flex-direction: column;
+      height:100vh;
+  }
+  
+  .header
+  {
+      display:flex;
+      justify-content: space-between;
+      padding:20px 30px;
+      align-items: center;
+  }
+  
+  .header a{
+      margin-right: 20px;
+      color:black;
+      font-size: 15;
+      text-decoration: inherit;
+  }
+  .header a:hover{
+  
+  text-decoration: underline;
+  color: #4285f4; /* Change link color on hover */
+      transition: color 0.3s; /* Smooth transition */
+  }
+  
+  
+  .header_right {
+  
+      display: flex;
+      align-items: center;
+      min-width: 13vw;
+      justify-content: space-between;
+      cursor: pointer;
+  }
+  
+  .header_right .header_app
+  {
+      margin-right: 10px;
+  }
+  
+  .main-body
+  {
+      flex:1;
+      display:flex;
+      margin-top:10% ;
+      flex-direction: column;
+  }
+  
+  .main-body img{
+      object-fit: contain;
+      height: 100px;
+  }
+  
+  
+  
+  
+  .search {
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+      align-items: center; /* Center align items */
+      margin-top: 10px; /* Add some top margin if needed */
+      
+  }
+  
+  
+  .search_input
+  {
+      display: flex;
+      align-items: center;
+      border: 1px solid lightgray;
+      border-radius: 999px;
+      width: 75vw;
+      max-width: 560px; /* Keeps the max width */
+      margin: 40px auto 20px; /* Centers the search input */
+      padding: 5px; /* Adds padding around the input */
+  
+  
+  }
+  .search_input input{
+      
+      flex: 1;
+      padding: 10px 15px; /* Adjusted padding for better spacing */
+      border: none;
+      outline: none;
+      border-radius: 999px; /* Matches the search bar's rounded corners */
+  }
+  
+  .search_input .material-icons
+  {
+      
+      color: gray;
+      margin: 0 10px; /* Space between the icons and input */
+      
+  }
+  
+  .mic{
+    cursor: pointer;
+  }
+  
+  .search_button
+  {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      
+  
+  
+  }
+  .search_button button
+  {
+      
+  
+  
+       
+      cursor: pointer;
+  
+      /* margin-top: 40px; */
+  
+      margin: 0 5px; /* Space between buttons */
+      padding: 10px 20px; /* Increased padding for better click area */
+      background-color: #f8f8f8; /* Light background for visibility */
+      border: 1px solid lightgray; /* Border for buttons */
+      border-radius: 5px; /* Rounded corners */
+  
+      transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+  
+  }
+  
+  
+  .search_button button:hover {
+      background-color: #e0e0e0; /* Darker gray on hover */
+  
+  }
+  
+  .search_button button:active {
+      transform: scale(0.98); /* Slight scaling effect when clicked */
+  }
+  </style>
+  
+  
+  
+  
+  
+  
+  
+    <title>GOOgle clone</title>
+</head>
+<body>
+
+    <!-- header starts -->
+
+<div class="header">
+  <div class="header_left">
+   <a href="#">About</a>
+   <a href="#">Store</a>
+
+  </div>
+
+  <div class="header_right">
+    <a href="#">Gmail</a>
+   <a href="#">Images</a>
+   <span class="material-icons">science</span>
+
+   <span class="material-icons header_apps">apps</span>
+   
+  </div>
+
+
+</div>
+
+    <!-- header close -->
+
+
+
+
+    <!-- main-body -->
+     <div class="main-body">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" />
+
+      
+
+
+      <div class="search">
+        <div class="search_input">
+            <span class="material-icons">search</span>
+            <input type="text" placeholder="Search Google or type a URL"/>
+            <span class="material-icons  mic ">mic</span>
+
+
+        </div>
+
+        <div class="search_button">
+          <button type="button" aria-label="Search Google">Google Search</button>
+          <button type="button" aria-label="Feeling Lucky">I'm Feeling Lucky</button>
+
+        </div>
+      </div>
+      
+
+     </div>
+
+
+
+    
+</body>
+</html>
