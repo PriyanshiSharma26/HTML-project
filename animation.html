@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            background:url('girly.jpg') no-repeat fixed center  ;
+        }
+
+        img{
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            /* animation-delay: 3s; */
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes animate
+        {
+            from{
+                width: 150px;height: 200px;
+            }
+            to {
+                width: 400px;height: 400px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="girly.jpg">
+    
+</body>
+</html>
